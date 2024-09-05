@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Include Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    
+    <!-- Include Slick Carousel Theme (Optional) -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <!-- Include jQuery (required for Slick) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Include Slick Carousel JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+<script type="text/javascript">
+    $(document).ready(function(){
+        // Initialize the video carousel
+        $('.golf-video-carousel').slick({
+            slidesToShow: 1,  // Show one video at a time
+            slidesToScroll: 1,  // Scroll one video at a time
+            arrows: true,  // Show previous/next arrows
+            dots: true,  // Show dots for navigation
+        });
+
+        // Initialize the reading image carousel
+        $('.reading-carousel').slick({
+            slidesToShow: 1,  // Show one image at a time
+            slidesToScroll: 1,  // Scroll one image at a time
+            arrows: true,  // Show previous/next arrows
+            dots: true,  // Show dots for navigation
+        });
+    });
+</script>
+<body>
+    <!-- Background Photo Section -->
+    <div class="background-photo"></div>
+
+    <!-- Sidebar Navigation Menu -->
+    <aside class="sidebar">
+        <div class="profile">
+            <img src="images/profilephoto.JPG" alt="Profile Photo">
+            <h2>Twisha Sharma</h2> <!-- Replace with your name -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">Overview</a></li> <!-- Overview links to About Me -->
+                <li><a href="#projects">Technical Projects</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#dashboard">Socials</a></li> <!-- Placeholder for dashboard -->
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- About Section -->
+        <section id="about">
+            <div class="container about-container">
+                <div class="personal-growth">
+                    <p>
+                        Hi there! I'm Twisha Sharma, a passionate tech enthusiast and a lifelong learner. 
+                        My journey in the world of technology began with a curiosity for how things work, starting with building and programming LEGO FLL robots from as early as 6 years old and later advancing to VEX robots in high school. 
+                        These early experiences ignited my love for robotics and coding, shaping my path into the exciting world of technology. 
+                        Whether it's building innovative web applications or diving into the intricacies of software development, I learn new things with every line of code I write.
+                        But there's more to me than just technology!
+                    </p>
+                    <p>
+                        When I'm not glued to my screen, you'll often find me on the golf course, perfecting my swing as part of my high school varsity golf team. 
+                        Golfing has taught me the importance of patience, precision, and perseverance—qualities I bring to my coding projects as well. 
+                        I'm also an avid reader, always on the hunt for my next great read. Books have a special place in my heart, and I believe they offer a unique way to explore new ideas and perspectives. 
+                        From diving into the latest tech trends to getting lost in a good novel, my love for reading fuels my creativity and keeps my mind sharp.
+                        In this website, you'll get a glimpse into my world, where I blend my technical skills with my personal passions. I’m excited to share my projects, hobbies, and the things that inspire me with you!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Section-->
+        <section id="projects">
+            <div class="container">
+                <h2>Technical Projects</h2>
+               
+                <!-- Personal Growth in Technical Projects -->
+                <div class="personal-growth">
+                    <hr class="small-centered-line"> <!-- Small line above the personal growth text -->
+                    <p>
+                        Many of these projects were developed through university classes, where I was able to apply academic knowledge to real-world problems. 
+                        Others, however, were created purely out of my own interest and passion for technology. The combination of formal education and self-motivated
+                        learning has allowed me to continually grow as a developer and explore various fields within software engineering.
+                    </p>
+                    <hr class="full-line"> <!-- Full line below the personal growth paragraph -->
+                </div>
+
+                <!-- Golf Tracking App -->
+                <div class="project">
+                    <h3>Golf Scorecard App</h3>
+                    <p><strong>Technologies:</strong> MongoDB, Node.js, React Native, Postman</p>
+                    <p>
+                        I developed a robust golf tracking app that allows users to input their scores and monitor their performance over time.
+                        The app features a MongoDB backend for persistent data storage, ensuring that users can reliably save and retrieve
+                        their golf statistics. On the server-side, I used Node.js to handle the application logic, while React Native was employed
+                        to create a responsive and intuitive mobile interface. This seamless combination of technologies provides a smooth user
+                        experience across various devices, enabling golfers to keep track of their progress anytime, anywhere. 
+                    </p>
+                </div>
+                <!-- Yap (Messaging App) -->
+                <div class ="project">
+                    <h3>Yap Messaging App</h3>
+                    <p><strong>Technologies:</strong> React Node.js, Express</p>
+                    <p>
+                        Collaborating with a team of friends, I played a key role in developing Yap, a dynamic messaging application.
+                        My contributions focused on designing and implementing the front-end login page, ensuring it was both user-friendly
+                        and visually appealing. I utilized React to build the interactive interface, while the backend was powered by Node.js
+                        and Express. This integration allowed for efficient user authentication and management, providing a secure and streamlined
+                        user experience. Yap is a testament to my ability to work effectively in a team and deliver a polished product.
+                    </p>
+                </div>
+                <!-- Web Proxy Server -->
+                <div class="project">
+                    <h3>Web Proxy Server</h3>
+                    <p><strong>Technologies:</strong> C </p>
+                    <p> 
+                        I implemented a Web Proxy Server capable of accepting client requests and converting them to HTTPS for secure communication
+                        with web servers. This project involved in-depth understanding of network protocols and secure data transmission,
+                        providing a crucial learning experience in system-level programming with C. The server ensures secure and efficient
+                        data exchange, highlighting my skills in network security and low-level programming. 
+                    </p>
+                </div>
+                <!--Simple IPv4 Router and Network Architecture with VLANs -->
+                <div class="project">
+                    <h3>Simple IPv4 Router and Network Architecture with VLANs</h3>
+                    <p><strong>Technologies:</strong> Python, Cisco Packet Tracer</p>
+                    <p>
+                        In this project, I developed a multi-subnet network topology for a simulated company environment. Using Mininet,
+                        I integrated switches and routers to create a network architecture that segmented different departments using VLANs
+                        (Virtual Local Area Networks). This setup ensured network isolation and security, reflecting my proficiency in network
+                        architecture and Python scripting. The project demonstrates my ability to design and implement complex networking
+                        solutions tailored to specific organizational needs. 
+                    </p>
+                </div>
+                <!-- UDP File Echo Application -->
+                <div class="project">
+                    <h3>UDP File Echo Application</h3>
+                    <p><strong>Technologies:</strong> C</p>
+                    <p>
+                        I developed a client-server file echo application using the UDP protocol in a UNIX environment. This application featured
+                        a custom protocol for splitting files into MTU-sized packets, ensuring reliable file transfer over the network. The project
+                        enhanced my understanding of network protocols, particularly UDP, and showcased my skills in handling low-level data
+                        transmission tasks in C.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub Profile Section -->
+        <div class="github-subscript">
+            <h3>Check Out My GitHub</h3>
+            <p><a href="https://github.com/twishatara" target="_blank" class="github-link">GitHub: twishatara</a></p>
+            <!-- Add a line under the GitHub link -->
+            <hr class="full-line">
+        </div>
+        <!-- Hobbies Section -->
+        <section id="hobbies">
+            <div class="container">
+                <h2>My Hobbies</h2>
+
+                <!-- Flexbox container for side-by-side layout -->
+                <div class="hobbies-container">
+                    <!-- Golfing Section -->
+                    <div class="golfing">
+                        <!-- Button for Golfing Application -->
+                        <a href="https://github.com/your-github/golf-project" class="project-button">Golf Application</a>
+                        <p>
+                            I have been an avid golfer since childhood, and the sport has taught me invaluable lessons in patience, precision, and perseverance. 
+                            Golfing is not just a hobby for me but a space where I can challenge myself, reflect on personal growth, and strive for continuous improvement.
+                        </p>
+                    <!--
+                                                <div class="carousel golf-video-carousel">
+                                                    <div><video src="videos/golfswing3.MOV" controls></video></div>
+                                                    <div><video src="videos/golfswing2.MOV" controls></video></div>
+                                                    <div><video src="videos/golfswing4.MOV" controls></video></div>
+                                                </div>
+                    -->
+
+                    
+                    </div>
+
+                    <!-- Reading Section -->
+                    <div class="reading">
+                        <!-- Button for Reading Application -->
+                        <a href="https://github.com/your-github/reading-project" class="project-button">Reading Application</a>
+                        <p>
+                            Alongside my love for technology, I have been an enthusiastic reader from a young age. Books have always opened doors to new worlds and ideas, 
+                            sparking creativity and inspiration. Whether diving into fiction or exploring the latest tech trends, reading provides a unique avenue for learning and self-improvement.
+                        </p>
+                        <!-- 
+                                                    <div class="carousel reading-carousel">
+                            <div><img src="images/read1.jpeg" alt="Book 1"></div>
+                            <div><img src="images/read2.jpeg" alt="Book 2"></div>
+                            <div><img src="images/reading.jpg" alt="Book 3"></div>
+                        </div>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Media Section -->
+        <section id="social-media">
+            <h2>Find Me on Social Media</h2>
+            <p><a href="www.linkedin.com/in/twisha-s-41b302118" target="_blank" class="github-link">Linkedin</a></p>
+        </section>
+    </div>
+</body>
+</html>
+
