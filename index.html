@@ -40,44 +40,121 @@
     <!-- Background Photo Section -->
     <div class="background-photo"></div>
 
-    <!-- Sidebar Navigation Menu -->
-    <aside class="sidebar">
+    <div class="sidebar">
         <div class="profile">
             <img src="images/profilephoto.JPG" alt="Profile Photo">
-            <h2>Twisha Sharma</h2> <!-- Replace with your name -->
+            <h2>Twisha Sharma</h2>
         </div>
         <nav>
             <ul>
-                <li><a href="#about">Overview</a></li> <!-- Overview links to About Me -->
+                <li><a href="#meet-me">Meet Me</a></li> <!-- "Meet Me" is the introduction -->
                 <li><a href="#projects">Technical Projects</a></li>
                 <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#dashboard">Socials</a></li> <!-- Placeholder for dashboard -->
+                <li><a href="#about">More About Me</a></li> <!-- "About Me" moved towards the end -->
             </ul>
         </nav>
-    </aside>
 
+        <!-- Let's Work Together Section -->
+        <div class="work-together">
+            <h3>Let's Work Together!</h3>
+            <a href="https://www.linkedin.com/in/twisha-s-41b302118" target="_blank" class="linkedin-button">
+                <i class="fa fa-linkedin"></i> LinkedIn
+            </a>
+            <p><i class="fa fa-envelope"></i> twisha.edu@gmail.com</p>
+        </div>
+    </div>
+    
     <!-- Main Content -->
     <div class="content">
-        <!-- About Section -->
-        <section id="about">
-            <div class="container about-container">
-                <div class="personal-growth">
-                    <p>
-                        Hi there! I'm Twisha Sharma, a passionate tech enthusiast and a lifelong learner. 
-                        My journey in the world of technology began with a curiosity for how things work, starting with building and programming LEGO FLL robots from as early as 6 years old and later advancing to VEX robots in high school. 
-                        These early experiences ignited my love for robotics and coding, shaping my path into the exciting world of technology. 
-                        Whether it's building innovative web applications or diving into the intricacies of software development, I learn new things with every line of code I write.
-                        But there's more to me than just technology!
-                    </p>
-                    <p>
-                        When I'm not glued to my screen, you'll often find me on the golf course, perfecting my swing as part of my high school varsity golf team. 
-                        Golfing has taught me the importance of patience, precision, and perseverance—qualities I bring to my coding projects as well. 
-                        I'm also an avid reader, always on the hunt for my next great read. Books have a special place in my heart, and I believe they offer a unique way to explore new ideas and perspectives. 
-                        From diving into the latest tech trends to getting lost in a good novel, my love for reading fuels my creativity and keeps my mind sharp.
-                        In this website, you'll get a glimpse into my world, where I blend my technical skills with my personal passions. I’m excited to share my projects, hobbies, and the things that inspire me with you!
-                    </p>
+        <!-- New Introduction Section ("Meet Me") -->
+        <section id="meet-me" class="intro-section">
+            <div class="button-container">
+                <div class="button-box">
+                    <a href="#school" class="hover-btn">
+                        <div class="icon">🏫</div> <!-- School Icon -->
+                        <span>School Experience</span>
+                        <p>University of California Santa Cruz</p>
+                    </a>
+                </div>
+        
+                <div class="button-box">
+                    <a href="#coding" class="hover-btn">
+                        <div class="icon">💻</div> <!-- Coding Icon -->
+                        <span>Coding Languages</span>
+                        <p>C, C++, C#, Python, Java, Bash</p>
+                    </a>
+                </div>
+        
+                <div class="button-box">
+                    <a href="#work" class="hover-btn">
+                        <div class="icon">🛠️</div> <!-- Work Experience Icon -->
+                        <span>Work Experience</span>
+                        <p>Managing Technology Consultant, Swim Instructor</p>
+                    </a>
                 </div>
             </div>
+        </section>
+
+        <!-- GitHub Profile Section -->
+        <div class="github-subscript">
+            <h3>Check Out My GitHub</h3>
+            <a href="https://github.com/twishatara" target="_blank" class="github-link">GitHub: twishatara</a>
+        </div>
+        
+        <!-- Line under GitHub Button -->
+        <hr class="full-line">
+
+        <!-- Work Experience Section -->
+        <section id="work" class="experience-section">
+            <h2>Work Experience</h2>
+            <p>I have had the opportunity to work as a technology consultant, an AI tutor, and as part of software development teams. 
+            Each role has provided me with hands-on experience in problem-solving, project management, and teamwork.</p>
+            <p>Here are some of the roles where I've gained valuable experience in technology and beyond:</p>
+            <ul>
+                <li>Managing Technology Consultant</li>
+                <li>Computer Networks Tutor</li>
+                <li>Discrete Math Tutor</li>
+                <li>High School Tutor</li>
+                <li>Swim Instructor</li>
+                <li>Golf Coach</li>
+            </ul>
+        </section>
+
+        <!-- School Experience Section -->
+        <section id="school" class="experience-section">
+            <h2>School Experience</h2>
+            <p>I studied at the University of California Santa Cruz, where I focused on artificial intelligence, algorithms, and various programming paradigms. 
+            My academic career involved math-heavy courses that taught me how to break down complex problems into manageable tasks.</p>
+            <p>Below are some of the relevant courses I've taken that have enhanced my technical expertise:</p>
+            <ul>
+                <li>CSE 101: Data Structures and Algorithms</li>
+                <li>CSE 107: Probability and Statistics</li>
+                <li>CSE 111: Advanced Programming</li>
+                <li>CSE 130: Principle of Computer System Design</li>
+                <li>CSE 13S: Computer Systems (with C Programming)</li>
+                <li>CSE 120: Computer Networks</li>
+                <li>CSE 151: Advanced Computer Networks</li>
+                <li>CSE 156: Network Programming</li>
+                <li>ECE 180: Advanced Renewable Energy</li>
+                <li>Physics 5A/C: Physics</li>
+            </ul>
+        </section>
+
+        <!-- Coding Languages Section -->
+        <section id="coding" class="experience-section">
+            <h2>Coding Languages</h2>
+            <p>Through my school projects and work, I have become proficient in languages like C, C++, Python, Java, and JavaScript. 
+            These languages have allowed me to tackle everything from low-level networking to web application development.</p>
+            <p>Here are the programming languages I've mastered through both coursework and personal projects:</p>
+            <ul>
+                <li>Python</li>
+                <li>C</li>
+                <li>C++</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+            </ul>
         </section>
 
         <!-- Technical Section-->
@@ -86,7 +163,7 @@
                 <h2>Technical Projects</h2>
                
                 <!-- Personal Growth in Technical Projects -->
-                <div class="personal-growth">
+                <div class="main-text">
                     <hr class="small-centered-line"> <!-- Small line above the personal growth text -->
                     <p>
                         Many of these projects were developed through university classes, where I was able to apply academic knowledge to real-world problems. 
@@ -157,65 +234,68 @@
             </div>
         </section>
 
-        <!-- GitHub Profile Section -->
-        <div class="github-subscript">
-            <h3>Check Out My GitHub</h3>
-            <p><a href="https://github.com/twishatara" target="_blank" class="github-link">GitHub: twishatara</a></p>
-            <!-- Add a line under the GitHub link -->
-            <hr class="full-line">
-        </div>
         <!-- Hobbies Section -->
         <section id="hobbies">
             <div class="container">
                 <h2>My Hobbies</h2>
+                <!-- Intro Section Centered -->
+                <div class="main-text">
+                    <hr class="small-centered-line"> <!-- Small line above the personal growth text -->
+                    <p>
+                        When I'm not deep in code, you'll find me either perfecting my swing on the golf course or lost in the pages of a great book. 
+                        Here's a sneak peek into the hobbies that keep my brain sharp and my heart happy!
+                    </p>
+                    <hr class="full-line"> <!-- Full line below the personal growth paragraph -->
+                </div>
 
                 <!-- Flexbox container for side-by-side layout -->
                 <div class="hobbies-container">
                     <!-- Golfing Section -->
                     <div class="golfing">
                         <!-- Button for Golfing Application -->
-                        <a href="https://github.com/your-github/golf-project" class="project-button">Golf Application</a>
+                        <a href="https://github.com/twishatara/GolfScorecard" target="_blank" class="github-link">Golf Application</a>
                         <p>
                             I have been an avid golfer since childhood, and the sport has taught me invaluable lessons in patience, precision, and perseverance. 
                             Golfing is not just a hobby for me but a space where I can challenge myself, reflect on personal growth, and strive for continuous improvement.
                         </p>
-                    <!--
-                                                <div class="carousel golf-video-carousel">
-                                                    <div><video src="videos/golfswing3.MOV" controls></video></div>
-                                                    <div><video src="videos/golfswing2.MOV" controls></video></div>
-                                                    <div><video src="videos/golfswing4.MOV" controls></video></div>
-                                                </div>
-                    -->
-
-                    
                     </div>
 
                     <!-- Reading Section -->
                     <div class="reading">
                         <!-- Button for Reading Application -->
-                        <a href="https://github.com/your-github/reading-project" class="project-button">Reading Application</a>
+                        <a href="https://github.com/twishatara" target="_blank" class="github-link">Reading Application</a>
                         <p>
                             Alongside my love for technology, I have been an enthusiastic reader from a young age. Books have always opened doors to new worlds and ideas, 
                             sparking creativity and inspiration. Whether diving into fiction or exploring the latest tech trends, reading provides a unique avenue for learning and self-improvement.
                         </p>
-                        <!-- 
-                                                    <div class="carousel reading-carousel">
-                            <div><img src="images/read1.jpeg" alt="Book 1"></div>
-                            <div><img src="images/read2.jpeg" alt="Book 2"></div>
-                            <div><img src="images/reading.jpg" alt="Book 3"></div>
-                        </div>
-                        -->
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Social Media Section -->
-        <section id="social-media">
-            <h2>Find Me on Social Media</h2>
-            <p><a href="www.linkedin.com/in/twisha-s-41b302118" target="_blank" class="github-link">Linkedin</a></p>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container about-container">
+                <div class="main-text">
+                    <p>
+                        Here's an essay about meeeee: a passionate tech enthusiast and a lifelong learner.
+                        My journey in the world of technology began with a curiosity for how things work, starting with building and programming LEGO FLL robots from as early as 6 years old and later advancing to VEX robots in high school. 
+                        These early experiences ignited my love for robotics and coding, shaping my path into the exciting world of technology. 
+                        Whether it's building innovative web applications or diving into the intricacies of software development, I learn new things with every line of code I write.
+                        But there's more to me than just technology!
+                    </p>
+                    <p>
+                        When I'm not glued to my screen, you'll often find me on the golf course, perfecting my swing as part of my high school varsity golf team. 
+                        Golfing has taught me the importance of patience, precision, and perseverance—qualities I bring to my coding projects as well. 
+                        I'm also an avid reader, always on the hunt for my next great read. Books have a special place in my heart, and I believe they offer a unique way to explore new ideas and perspectives. 
+                        From diving into the latest tech trends to getting lost in a good novel, my love for reading fuels my creativity and keeps my mind sharp.
+                        In this website, you'll get a glimpse into my world, where I blend my technical skills with my personal passions. I’m excited to share my projects, hobbies, and the things that inspire me with you!
+                    </p>
+                </div>
+            </div>
         </section>
+
     </div>
 </body>
 </html>
-

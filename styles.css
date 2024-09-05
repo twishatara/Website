@@ -87,6 +87,87 @@ section {
     border-bottom: 1px solid var(--silver); /* Section divider */
 }
 
+/* Introduction Section Styles (Meet Me) */
+.intro-section {
+    background-color: var(--platinum); /* Light background */
+    color: var(--dim-gray); /* Text color */
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Personal Growth Section Styling */
+.main-text {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.main-text p {
+    font-size: 1.2em;
+    line-height: 1.0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.button-box {
+    flex: 1;
+    text-align: center;
+    margin: 20px;
+}
+
+.hover-btn {
+    display: block;
+    background-color: var(--taupe-gray); /* Button background color */
+    color: var(--platinum); /* Button text color */
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.2em;
+}
+
+.hover-btn:hover {
+    background-color: var(--dim-gray); /* Hover effect */
+    color: #fff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* About Me Section */
+.about-section {
+    padding: 50px;
+    background-color: var(--taupe-gray);
+    color: var(--platinum);
+    text-align: center;
+}
+
+.about-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Sidebar Navigation */
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: var(--platinum); /* Sidebar link color */
+}
+
+.sidebar nav ul li a:hover {
+    background-color: var(--silver); /* Hover effect on the sidebar */
+    color: var(--dim-gray); /* Change text color on hover */
+}
+
 /* Center Titles for Technical Projects and My Hobbies */
 #projects h2, #hobbies h2 {
     text-align: center;
@@ -95,17 +176,7 @@ section {
     color: var(--dim-gray);
 }
 
-/* Dashboard placeholder styles */
-#dashboard h2 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-#dashboard p {
-    font-size: 1.2em;
-}
-
-/* GitHub Subscript Centering */
+/* Center GitHub Subscript and Add Line Underneath */
 .github-subscript {
     display: flex;
     flex-direction: column;
@@ -119,8 +190,7 @@ section {
     margin-bottom: 10px;
 }
 
-.github-link, .project-button {
-    display: inline-block;
+.github-link {
     background-color: #643843;
     color: #fff;
     padding: 10px 20px;
@@ -128,20 +198,20 @@ section {
     font-weight: bold;
     border-radius: 5px;
     margin-top: 10px;
-    width: 250px; /* Set button width to be the same for all buttons */
-    text-align: center; /* Center the text in the button */
+    text-align: center;
     transition: background-color 0.3s ease;
 }
 
-.github-link:hover, .project-button:hover {
+.github-link:hover {
     background-color: #422526;
 }
 
-/* Full Line (GitHub section and below Personal Growth paragraphs) */
+/* Line Under GitHub Button */
 .full-line {
     border: none;
     height: 1px;
     background-color: #ccc;
+    width: 100%; /* Full width line */
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -164,35 +234,58 @@ section {
     margin-bottom: 30px;
 }
 
-.golfing, .reading {
-    width: 48%; /* Each section takes up nearly half of the container */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Align content to the left */
+/* Center and Style Icons */
+.golfing .icon, .reading .icon {
+    font-size: 2em; /* Adjust size as needed */
+    margin-bottom: 10px;
+    color: var(--dim-gray); /* Adjust icon color if needed */
+    display: block;
+    text-align: center;
 }
 
-/* Center the Reading section content to the right */
-.reading {
-    align-items: flex-end;
-}
-
-/* Project Button Styling */
+/* Smaller Golf and Reading Buttons and Centering */
 .project-button {
     display: inline-block;
     background-color: #643843;
     color: #fff;
-    padding: 10px 20px;
+    padding: 5px 15px; /* Smaller padding for smaller buttons */
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    margin-top: 10px;
-    width: 250px; /* Keep button width consistent */
-    text-align: center;
+    margin: 10px auto; /* Center the button */
     transition: background-color 0.3s ease;
 }
 
 .project-button:hover {
     background-color: #422526;
+}
+
+/* Centering the Entire Section for Golf and Reading */
+.hobbies-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.golfing, .reading {
+    width: 48%;
+    text-align: center; /* Center all content */
+}
+
+.golfing .project-button, .reading .project-button {
+    margin: 0 auto; /* Center the buttons */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hobbies-container {
+        flex-direction: column; /* Stack sections on smaller screens */
+    }
+
+    .golfing, .reading {
+        width: 100%; /* Full width when stacked */
+    }
 }
 
 /* Carousel and Content Styling */
@@ -210,18 +303,6 @@ section {
     object-fit: contain; /* Ensure videos/images are not cut off */
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .hobbies-container {
-        flex-direction: column; /* Stack sections on smaller screens */
-    }
-
-    .golfing, .reading {
-        width: 100%; /* Full width when stacked */
-        align-items: center; /* Center content when stacked */
-    }
-}
-
 /* Optional: Adjust the size of the carousel navigation dots */
 .slick-dots li button:before {
     font-size: 12px;
@@ -231,13 +312,78 @@ section {
     color: #333; /* Customize arrow colors */
 }
 
-/* Personal Growth Section Styling */
-.personal-growth {
-    text-align: center;
-    margin-top: 40px;
+
+/* Experience Section Styling */
+.experience-section {
+    padding: 30px;
+    margin-bottom: 40px;
+    background-color: var(--platinum);
+    color: var(--dim-gray);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.personal-growth p {
+.experience-section h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+/* Let's Work Together Section in Sidebar */
+.work-together {
+    margin-top: 40px;
+    text-align: center;
+    color: var(--platinum);
+}
+
+.work-together h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.linkedin-button {
+    display: inline-block;
+    background-color: #0077b5;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.linkedin-button:hover {
+    background-color: #005582;
+}
+
+.work-together p {
+    margin-top: 10px;
     font-size: 1.2em;
-    line-height: 1.0;
+}
+
+.fa-linkedin, .fa-envelope {
+    margin-right: 5px;
+}
+
+/* Add margin for the email and icon */
+.work-together p i {
+    margin-right: 8px;
+}
+
+/* Fixing Golf and Reading Icons */
+.golfing .icon, .reading .icon {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: var(--dim-gray);
+    text-align: center;
+    display: block;
+}
+
+ul {
+    list-style-type: disc; /* Change bullet point style if desired */
+    margin-left: 20px; /* Add some space on the left */
+}
+
+ul li {
+    margin-bottom: 10px; /* Add some space between items */
 }
