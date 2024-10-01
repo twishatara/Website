@@ -1,302 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>My Personal Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twisha Sharma | Personal Website</title>
     <link rel="stylesheet" href="styles.css">
-    
-    <!-- Include Slick Carousel CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    
-    <!-- Include Slick Carousel Theme (Optional) -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
-    <!-- Include jQuery (required for Slick) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
 
-    <!-- Include Slick Carousel JS -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
-<script type="text/javascript">
-    $(document).ready(function(){
-        // Initialize the video carousel
-        $('.golf-video-carousel').slick({
-            slidesToShow: 1,  // Show one video at a time
-            slidesToScroll: 1,  // Scroll one video at a time
-            arrows: true,  // Show previous/next arrows
-            dots: true,  // Show dots for navigation
-        });
 
-        // Initialize the reading image carousel
-        $('.reading-carousel').slick({
-            slidesToShow: 1,  // Show one image at a time
-            slidesToScroll: 1,  // Scroll one image at a time
-            arrows: true,  // Show previous/next arrows
-            dots: true,  // Show dots for navigation
-        });
-    });
-</script>
 <body>
-    <!-- Background Photo Section -->
-    <div class="background-photo"></div>
-
-    <div class="sidebar">
-        <div class="profile">
-            <img src="images/profilephoto.JPG" alt="Profile Photo">
-            <h2>Twisha Sharma</h2>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#meet-me">Meet Me</a></li> <!-- "Meet Me" is the introduction -->
-                <li><a href="#projects">Technical Projects</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#about">More About Me</a></li> <!-- "About Me" moved towards the end -->
-            </ul>
-        </nav>
-
-        <!-- Let's Work Together Section -->
-        <div class="work-together">
-            <h3>Let's Work Together!</h3>
-            <a href="https://www.linkedin.com/in/twisha-s-41b302118" target="_blank" class="linkedin-button">
-                <i class="fa fa-linkedin"></i> LinkedIn
-            </a>
-            <p><i class="fa fa-envelope"></i> twisha.edu@gmail.com</p>
-        </div>
-    </div>
-    
-    <!-- Main Content -->
-    <div class="content">
-        <!-- New Introduction Section ("Meet Me") -->
-        <section id="meet-me" class="intro-section">
-            <div class="button-container">
-                <div class="button-box">
-                    <a href="#school" class="hover-btn">
-                        <div class="icon">🏫</div> <!-- School Icon -->
-                        <span>School Experience</span>
-                        <p>University of California Santa Cruz</p>
+    <!-- Welcome Section -->
+    <section class="welcome-section" id="welcome">
+        <div class="welcome-content">
+            <!-- Text Header -->
+            <div class="stacked-text">
+                <h1>Take</h1>
+                <h1>a</h1>
+                <h1>Peek</h1>
+                <h1>Into</h1>
+                <h1>my</h1>
+                <h1>Life</h1>
+            </div>
+            <!-- Main Title and Introduction -->
+            <div class="horizontal-content">
+                <h2>Hi! I am Twisha Sharma</h2>
+                <p class="subheader">Just a girl who loves to travel, read, golf, and code. Occasionally I try to connect everything. Take a look at what I'm working on!</p>
+                <div class="button-container">
+                    <a href="https://github.com/twishatara" target="_blank" class="portfolio-button">
+                        <i class="fa-solid fa-laptop"></i> Portfolio
                     </a>
-                </div>
-        
-                <div class="button-box">
-                    <a href="#coding" class="hover-btn">
-                        <div class="icon">💻</div> <!-- Coding Icon -->
-                        <span>Coding Languages</span>
-                        <p>C, C++, C#, Python, Java, Bash</p>
-                    </a>
-                </div>
-        
-                <div class="button-box">
-                    <a href="#work" class="hover-btn">
-                        <div class="icon">🛠️</div> <!-- Work Experience Icon -->
-                        <span>Work Experience</span>
-                        <p>Managing Technology Consultant, Swim Instructor</p>
+                    <a href="#footer" class="connect-button">
+                        <i class="fa-solid fa-envelope"></i> Connect With Me
                     </a>
                 </div>
             </div>
-        </section>
-
-        <!-- GitHub Profile Section -->
-        <div class="github-subscript">
-            <h3>Check Out My GitHub</h3>
-            <a href="https://github.com/twishatara" target="_blank" class="github-link">GitHub: twishatara</a>
         </div>
+        <!-- Profile Image Placeholder -->
+        <div class="profile-image">
+            <img src="images/profilephoto.jpg" alt="Profile Photo">
+        </div>
+    </section>
 
-        <!-- Line under GitHub Button -->
-        <hr class="full-line">
-
-        <!-- Work Experience Section -->
-        <section id="work" class="experience-section">
-            <h2>Work Experience</h2>
-            <p>I have had the opportunity to work as a technology consultant, an AI tutor, and as part of software development teams. 
-            Each role has provided me with hands-on experience in problem-solving, project management, and teamwork.</p>
-            <p>Here are some of the roles where I've gained valuable experience in technology and beyond:</p>
-            <ul>
-                <li>Managing Technology Consultant</li>
-                <li>Computer Networks Tutor</li>
-                <li>Discrete Math Tutor</li>
-                <li>High School Tutor</li>
-                <li>Swim Instructor</li>
-                <li>Golf Coach</li>
-            </ul>
-        </section>
-
-        <!-- School Experience Section -->
-        <section id="school" class="experience-section">
-            <h2>School Experience</h2>
-            <p>I studied at the University of California Santa Cruz, where I focused on artificial intelligence, algorithms, and various programming paradigms. 
-            My academic career involved math-heavy courses that taught me how to break down complex problems into manageable tasks.</p>
-            <p>Below are some of the relevant courses I've taken that have enhanced my technical expertise:</p>
-            <ul>
-                <li>CSE 101: Data Structures and Algorithms</li>
-                <li>CSE 107: Probability and Statistics</li>
-                <li>CSE 111: Advanced Programming</li>
-                <li>CSE 130: Principle of Computer System Design</li>
-                <li>CSE 13S: Computer Systems (with C Programming)</li>
-                <li>CSE 120: Computer Networks</li>
-                <li>CSE 151: Advanced Computer Networks</li>
-                <li>CSE 156: Network Programming</li>
-                <li>ECE 180: Advanced Renewable Energy</li>
-                <li>Physics 5A/C: Physics</li>
-            </ul>
-        </section>
-
-        <!-- Coding Languages Section -->
-        <section id="coding" class="experience-section">
-            <h2>Coding Languages</h2>
-            <p>Through my school projects and work, I have become proficient in languages like C, C++, Python, Java, and JavaScript. 
-            These languages have allowed me to tackle everything from low-level networking to web application development.</p>
-            <p>Here are the programming languages I've mastered through both coursework and personal projects:</p>
-            <ul>
-                <li>Python</li>
-                <li>C</li>
-                <li>C++</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>JavaScript</li>
-                <li>Java</li>
-            </ul>
-        </section>
-
-        <!-- Technical Section-->
-        <section id="projects">
-            <div class="container">
-                <h2>Technical Projects</h2>
-               
-                <!-- Personal Growth in Technical Projects -->
-                <div class="main-text">
-                    <hr class="small-centered-line"> <!-- Small line above the personal growth text -->
-                    <p>
-                        Many of these projects were developed through university classes, where I was able to apply academic knowledge to real-world problems. 
-                        Others, however, were created purely out of my own interest and passion for technology. The combination of formal education and self-motivated
-                        learning has allowed me to continually grow as a developer and explore various fields within software engineering.
-                    </p>
-                    <hr class="full-line"> <!-- Full line below the personal growth paragraph -->
+    <!-- About & Why Hire Me Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="left-section">
+                <h2 class="press-font">Why Hire Me?</h2>
+                <div class="subsection">
+                    <h3>Adaptability & Problem-Solving</h3>
+                    <p>Adaptability developed from playing golf. Problem-solving and teaching skills from implementing a ticketing system as a technology consultant.</p>
                 </div>
-
-                <!-- Golf Tracking App -->
-                <div class="project">
-                    <h3>Golf Scorecard App</h3>
-                    <p><strong>Technologies:</strong> MongoDB, Node.js, React Native, Postman</p>
-                    <p>
-                        I developed a robust golf tracking app that allows users to input their scores and monitor their performance over time.
-                        The app features a MongoDB backend for persistent data storage, ensuring that users can reliably save and retrieve
-                        their golf statistics. On the server-side, I used Node.js to handle the application logic, while React Native was employed
-                        to create a responsive and intuitive mobile interface. This seamless combination of technologies provides a smooth user
-                        experience across various devices, enabling golfers to keep track of their progress anytime, anywhere. 
-                    </p>
+                <div class="subsection">
+                    <h3>Leadership & Communication</h3>
+                    <p>Showcase leadership and communication skills from your experience as a golf coach.</p>
                 </div>
-                <!-- Yap (Messaging App) -->
-                <div class ="project">
-                    <h3>Yap Messaging App</h3>
-                    <p><strong>Technologies:</strong> React Node.js, Express</p>
-                    <p>
-                        Collaborating with a team of friends, I played a key role in developing Yap, a dynamic messaging application.
-                        My contributions focused on designing and implementing the front-end login page, ensuring it was both user-friendly
-                        and visually appealing. I utilized React to build the interactive interface, while the backend was powered by Node.js
-                        and Express. This integration allowed for efficient user authentication and management, providing a secure and streamlined
-                        user experience. Yap is a testament to my ability to work effectively in a team and deliver a polished product.
-                    </p>
-                </div>
-                <!-- Web Proxy Server -->
-                <div class="project">
-                    <h3>Web Proxy Server</h3>
-                    <p><strong>Technologies:</strong> C </p>
-                    <p> 
-                        I implemented a Web Proxy Server capable of accepting client requests and converting them to HTTPS for secure communication
-                        with web servers. This project involved in-depth understanding of network protocols and secure data transmission,
-                        providing a crucial learning experience in system-level programming with C. The server ensures secure and efficient
-                        data exchange, highlighting my skills in network security and low-level programming. 
-                    </p>
-                </div>
-                <!--Simple IPv4 Router and Network Architecture with VLANs -->
-                <div class="project">
-                    <h3>Simple IPv4 Router and Network Architecture with VLANs</h3>
-                    <p><strong>Technologies:</strong> Python, Cisco Packet Tracer</p>
-                    <p>
-                        In this project, I developed a multi-subnet network topology for a simulated company environment. Using Mininet,
-                        I integrated switches and routers to create a network architecture that segmented different departments using VLANs
-                        (Virtual Local Area Networks). This setup ensured network isolation and security, reflecting my proficiency in network
-                        architecture and Python scripting. The project demonstrates my ability to design and implement complex networking
-                        solutions tailored to specific organizational needs. 
-                    </p>
-                </div>
-                <!-- UDP File Echo Application -->
-                <div class="project">
-                    <h3>UDP File Echo Application</h3>
-                    <p><strong>Technologies:</strong> C</p>
-                    <p>
-                        I developed a client-server file echo application using the UDP protocol in a UNIX environment. This application featured
-                        a custom protocol for splitting files into MTU-sized packets, ensuring reliable file transfer over the network. The project
-                        enhanced my understanding of network protocols, particularly UDP, and showcased my skills in handling low-level data
-                        transmission tasks in C.
-                    </p>
+                <div class="subsection">
+                    <h3>Customer Service Skills</h3>
+                    <p>Customer service skills gained as a swim instructor for children, adults, and infants.</p>
                 </div>
             </div>
-        </section>
-
-        <!-- Hobbies Section -->
-        <section id="hobbies">
-            <div class="container">
-                <h2>My Hobbies</h2>
-                <!-- Intro Section Centered -->
-                <div class="main-text">
-                    <hr class="small-centered-line"> <!-- Small line above the personal growth text -->
-                    <p>
-                        When I'm not deep in code, you'll find me either perfecting my swing on the golf course or lost in the pages of a great book. 
-                        Here's a sneak peek into the hobbies that keep my brain sharp and my heart happy!
-                    </p>
-                    <hr class="full-line"> <!-- Full line below the personal growth paragraph -->
-                </div>
-
-                <!-- Flexbox container for side-by-side layout -->
-                <div class="hobbies-container">
-                    <!-- Golfing Section -->
-                    <div class="golfing">
-                        <!-- Button for Golfing Application -->
-                        <a href="https://github.com/twishatara/GolfScorecard" target="_blank" class="github-link">Golf Application</a>
-                        <p>
-                            I have been an avid golfer since childhood, and the sport has taught me invaluable lessons in patience, precision, and perseverance. 
-                            Golfing is not just a hobby for me but a space where I can challenge myself, reflect on personal growth, and strive for continuous improvement.
-                        </p>
+            <div class="right-section">
+                <h2 class="press-font">My Background</h2>
+                <p>Talk about your time at UC Santa Cruz and your love for nature and the outdoors. Mention your passion for reading.</p>
+                <h3>Top 4 Places I've Been</h3>
+                <div class="travel-photos">
+                    <div class="travel-photo">
+                        <img src="images/place1.jpg" alt="Place 1">
+                        <p>Place 1</p>
                     </div>
-
-                    <!-- Reading Section -->
-                    <div class="reading">
-                        <!-- Button for Reading Application -->
-                        <a href="https://github.com/twishatara" target="_blank" class="github-link">Reading Application</a>
-                        <p>
-                            Alongside my love for technology, I have been an enthusiastic reader from a young age. Books have always opened doors to new worlds and ideas, 
-                            sparking creativity and inspiration. Whether diving into fiction or exploring the latest tech trends, reading provides a unique avenue for learning and self-improvement.
-                        </p>
+                    <div class="travel-photo">
+                        <img src="images/place2.jpg" alt="Place 2">
+                        <p>Place 2</p>
+                    </div>
+                    <div class="travel-photo">
+                        <img src="images/place3.jpg" alt="Place 3">
+                        <p>Place 3</p>
+                    </div>
+                    <div class="travel-photo">
+                        <img src="images/place4.jpg" alt="Place 4">
+                        <p>Place 4</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-
-        <!-- About Section -->
-        <section id="about">
-            <div class="container about-container">
-                <h2>More About Me!</h2>
-                <div class="main-text">
-                    <p>
-                        Here's an essay about meeeee: a passionate tech enthusiast and a lifelong learner.
-                        My journey in the world of technology began with a curiosity for how things work, starting with building and programming LEGO FLL robots from as early as 6 years old and later advancing to VEX robots in high school. 
-                        These early experiences ignited my love for robotics and coding, shaping my path into the exciting world of technology. 
-                        Whether it's building innovative web applications or diving into the intricacies of software development, I learn new things with every line of code I write.
-                        But there's more to me than just technology!
-                    </p>
-                    <p>
-                        When I'm not glued to my screen, you'll often find me on the golf course, perfecting my swing as part of my high school varsity golf team. 
-                        Golfing has taught me the importance of patience, precision, and perseverance—qualities I bring to my coding projects as well. 
-                        I'm also an avid reader, always on the hunt for my next great read. Books have a special place in my heart, and I believe they offer a unique way to explore new ideas and perspectives. 
-                        From diving into the latest tech trends to getting lost in a good novel, my love for reading fuels my creativity and keeps my mind sharp.
-                        In this website, you'll get a glimpse into my world, where I blend my technical skills with my personal passions. I’m excited to share my projects, hobbies, and the things that inspire me with you!
-                    </p>
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <h2 class="press-font">Testimonials</h2>
+        <div class="testimonial-cards">
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                 </div>
+                <p>"Twisha is an incredible team player, and her skills truly stand out in any project she undertakes!"</p>
+                <p class="author">- Person 1</p>
             </div>
-        </section>
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>"Great communication skills, Twisha made working on the project fun and efficient."</p>
+                <p class="author">- Person 2</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>"Twisha’s adaptability and problem-solving skills were crucial for the project's success."</p>
+                <p class="author">- Person 3</p>
+            </div>
+        </div>
+    </section>
 
-    </div>
+    <!-- Call to Action Section -->
+    <section class="call-to-action" id="contact">
+        <h2>Wanna start a project together? Let's get coffee!</h2>
+        <a href="mailto:twisha.edu@gmail.com" class="email-button">Send a Message</a>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="footer">
+        <div class="footer-content social-media-section">
+            <h3>Social Media</h3>
+            <ul>
+                <li><a href="https://github.com/twishatara" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/twisha-s-41b302118" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+            </ul>
+        </div>
+        <div class="footer-content contact-me-section">
+            <h3>Contact Me</h3>
+            <ul>
+                <li>Email: <a href="mailto:twisha.edu@gmail.com"><i class="fa-solid fa-envelope"></i> twisha.edu@gmail.com</a></li>
+                <li>Phone: (123) 456-7890</li>
+            </ul>
+        </div>
+        <div class="footer-content useful-links-section">
+            <h3>Useful Links</h3>
+            <ul class="footer-links">
+                <li><a href="#welcome">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#about">Skills</a></li>
+                <li><a href="https://github.com/twishatara" target="_blank">Portfolio</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
+
 </html>
